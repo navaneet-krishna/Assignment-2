@@ -1,0 +1,23 @@
+=== MergeSort Execution Trace ===
+Initial array: 324 125 456 218 102 389 275 147 
+
+Merge #1  (indices 0..1, mid=0) -> subarray: 125 324 
+   --> Full array now: 125 324 456 218 102 389 275 147 
+Merge #2  (indices 2..3, mid=2) -> subarray: 218 456 
+   --> Full array now: 125 324 218 456 102 389 275 147 
+Merge #3  (indices 0..3, mid=1) -> subarray: 125 218 324 456 
+   --> Full array now: 125 218 324 456 102 389 275 147 
+Merge #4  (indices 4..5, mid=4) -> subarray: 102 389 
+   --> Full array now: 125 218 324 456 102 389 275 147 
+Merge #5  (indices 6..7, mid=6) -> subarray: 147 275 
+   --> Full array now: 125 218 324 456 102 389 147 275 
+Merge #6  (indices 4..7, mid=5) -> subarray: 102 147 275 389 
+   --> Full array now: 125 218 324 456 102 147 275 389 
+Merge #7  (indices 0..7, mid=3) -> subarray: 102 125 147 218 275 324 389 456 
+   --> Full array now: 102 125 147 218 275 324 389 456 
+
+Final sorted array: 102 125 147 218 275 324 389 456 
+
+--- Performance Metrics ---
+Total comparisons: 17
+Total merge operations (passes): 7
